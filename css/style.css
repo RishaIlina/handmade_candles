@@ -93,6 +93,7 @@ align-items: center;
 /* Секция main */
 .main {
     background-color: #FFF8F3;
+    overflow-x: clip;
 }
 
 .top {
@@ -183,6 +184,19 @@ align-items: center;
     padding-left: 20px;
     padding-right: 20px;
     }
+
+    .top__content {
+        width: 333px;
+        padding: 95px 0 70px;
+    }
+
+    .top__img-l {
+        width: 655px;
+    }
+
+    .top__img {
+        left: 300px;
+    }
 }
 
 @media (max-width: 900px) {
@@ -212,6 +226,10 @@ align-items: center;
     .footer__social,
     .footer__social-contacts {
         justify-content: center;
+    }
+
+    .top__title {
+        margin-bottom: 30px;
     }
 }
 
@@ -252,6 +270,24 @@ align-items: center;
 
     .footer__social-contacts {
         gap: 8px;
+    }
+
+    .top__content {
+        width: 230px;
+    }
+
+    .top__title {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+
+    .top__text {
+        font-style: 10px;
+        margin-bottom: 20px;
+    }
+
+    .top__img {
+        left: 180px;
     }
 }
 
@@ -315,5 +351,92 @@ align-items: center;
     .footer__social-link img {
         width: 22px;
         height: 22px;
+    }
+}
+
+@media (max-width: 480px) {
+    .top__img-l {
+        width: 309px;
+        left: 167px;
+    }
+
+    .top__content {
+        width: 180px;
+    }
+
+    .top__title {
+        font-size: 15px;
+        margin-bottom: 15px;
+    }
+
+    .top__text {
+        font-size: 8px;
+        margin-bottom: 15px;
+    }
+
+    .top__btn {
+        font-size: 10px;
+        padding: 14px 41px;
+    }
+
+    .top {
+        padding: 30px 0 50px;
+    }
+}
+
+@media (max-width: 360px) {
+    .top__img-l {
+        width: 185px;
+    }
+
+    .top__img {
+        left: auto;
+        right: 0;
+    }
+
+    .top__content {
+        max-width: 200px;
+        padding: 20px 0 0;
+    }
+
+    .top__title {
+        font-size: 18px;
+    }
+
+    .top__text {
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 330px) {
+    .top__content {
+        max-width: 150px;
+    }
+
+    .top__title {
+        font-size: 17px;
+    }
+
+    .top__text {
+        font-size: 8px;
+    }
+}
+
+@media (max-width: 300px) {
+    .top__content {
+        width: 130px;
+    }
+
+    .top__title {
+        font-size: 15px;
+    }
+
+    .top__btn {
+        font-size: 8px;
+        padding: 12px 36px;
+    }
+
+    .top__img {
+        left: 106px;
     }
 }
