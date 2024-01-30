@@ -33,11 +33,50 @@ button {
     cursor: pointer;
 }
 
+
+.title {
+    margin-bottom: 15px;
+    font-size: 40px;
+    font-weight: 400;
+}
+
 .container {
     max-width: 1180px;
     padding-left: 10px;
     padding-right: 10px;
     margin: 0 auto;
+}
+
+.button {
+    padding: 18px 54px;
+    background: #FFBD59;
+    font-family: 'Comfortaa', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.section--decor {
+    position: relative;
+}
+
+.section--decor::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-image: url(../images/section-decor.png);
+    width: 22px;
+    height: 30px;
+}
+
+.section--decor::after {
+    content: '';
+    position: absolute;
+    left: 22px;
+    bottom: 13px;
+    background-color: #7B6152;
+    width: 150%;
+    height: 1px;
 }
 
 /* Шапка профиля */
@@ -114,6 +153,7 @@ align-items: center;
     font-family: 'Yeseva One', serif;
     font-size: 30px;
     margin-bottom: 15px;
+    font-weight: 400;
 }
 
 .top__text {
@@ -140,6 +180,7 @@ align-items: center;
     background-color: #A5978E;
     padding: 50px 0 50px;
     color: #FAFAFA;
+    margin-bottom: 150px;
 }
 
 .about__inner {
@@ -149,11 +190,6 @@ align-items: center;
 
 .about__content {
     min-width: 370px;
-}
-
-.about__title {
-    margin-bottom: 15px;
-    font-size: 40px;
 }
 
 .about__text {
@@ -167,27 +203,6 @@ align-items: center;
     align-items: center;
     gap: 20px;
     flex-basis: 930px;
-    position: relative;
-}
-
-.about__list::before {
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    background-image: url(../images/about-decor.png);
-    width: 22px;
-    height: 30px;
-}
-
-.about__list::after {
-    content: '';
-    position: absolute;
-    left: 22px;
-    bottom: 13px;
-    background-color: #7B6152;
-    width: 1000%;
-    height: 1px;
 }
 
 .about__item-img {
@@ -197,6 +212,55 @@ align-items: center;
 .about__item-text {
     font-size: 11px;
 }
+
+/* Наши товары */
+.section__inner {
+    display: grid;
+    grid-template-columns: 370px auto;
+}
+
+.section__content-descr {
+    display: grid;
+    grid-template-columns: auto auto;
+    padding-bottom: 92px;
+}
+
+.products__content {
+    gap: 50px 90px
+}
+
+.products__item {
+    width: 290px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.products__item-img {
+    width: 274px;
+    height: 310px;
+    margin-bottom: 8px;
+}
+
+.products__item-price {
+    margin-bottom: 12px;
+    font-size: 16px;
+    font-family: 'Yeseva One', serif;
+    font-weight: 400;
+}
+
+.products__item-title {
+    margin-bottom: 16px;
+    font-size: 16px;
+    font-family: 'Yeseva One', serif;
+    font-weight: 400;
+}
+
+.products__item-text {
+    margin-bottom: 27px;
+    font-size: 12px;
+}
+
+
 
 
 /* Подвал */
@@ -242,6 +306,13 @@ align-items: center;
 .footer__social-link img {
     width: 22px;
     height: 22px;
+}
+
+
+
+/* Атомарные классы*/
+.pb-150 {
+    padding-bottom: 150px;
 }
 
 @media (max-width: 1000px) {
@@ -569,7 +640,8 @@ align-items: center;
         padding-bottom: 10px;
     }
 
-    .about__item-img--2 {
+    .about__item-img--2,
+    .about__item-img--3 {
         display: none;
     }
 }
