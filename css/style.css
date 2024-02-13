@@ -398,6 +398,9 @@ align-items: center;
     padding-bottom: 150px;
 }
 
+.pt-150 {
+    padding-top: 150px;
+}
 
 /* Адаптив */
 @media (max-width: 1000px) {
