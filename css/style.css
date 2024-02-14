@@ -56,33 +56,6 @@ button {
     font-weight: 600;
 }
 
-.section--decor {
-    position: relative;
-}
-
-.section--decor::before {
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    background-image: url(../images/section-decor.png);
-    width: 22px;
-    height: 30px;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-}
-
-.section--decor::after {
-    content: '';
-    position: absolute;
-    left: 22px;
-    bottom: 13px;
-    background-color: #7B6152;
-    width: 100%;
-    height: 1px;
-}
-
 /* Шапка профиля */
 .menu__btn {
     display: none;
@@ -104,10 +77,10 @@ button {
 }
 
 .header__inner {
-padding-top: 4px;
-display: flex;
-justify-content: space-between;
-align-items: center;
+    padding: 8px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .menu__list {
@@ -227,6 +200,10 @@ align-items: center;
 }
 
 /* Этапы создания свечей */
+.steps {
+    background-color: #FFF8F3;
+}
+
 .steps__list {
     gap: 70px 25px;
     counter-reset: number;
@@ -394,12 +371,12 @@ align-items: center;
 
 
 /* Атомарные классы*/
-.pb-150 {
-    padding-bottom: 150px;
+.pb-100 {
+    padding-bottom: 100px;
 }
 
-.pt-150 {
-    padding-top: 150px;
+.pt-100 {
+    padding-top: 100px;
 }
 
 /* Адаптив */
@@ -424,12 +401,12 @@ align-items: center;
     }
 
     .section__inner {
-        grid-template-columns: 390px auto;
+        grid-template-columns: 290px auto;
         gap: 0 10px;
     }
 
     .products__content {
-        gap: 67px
+        gap: 20px
     }
 
     .section__text {
@@ -796,6 +773,10 @@ align-items: center;
     .team {
         margin-bottom: 50px;
     }
+
+    .team__item-box {
+        left: 94px;
+    }
 }
 
 @media (max-width: 404px) {
@@ -925,6 +906,18 @@ align-items: center;
     .courses__priсe {
         bottom: 6px;
         right: -2px;
+    }
+
+    .steps__list {
+        gap: 20px 10px;
+    }
+
+    .steps__item {
+        gap: 0 10px;
+    }
+
+    .steps__item-text {
+        font-size: 6px;
     }
 
     .team__img {
