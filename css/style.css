@@ -326,6 +326,7 @@ button {
 /* Подвал */
 .footer {
     padding: 40px 0 150px;
+    background-color: #FFF8F3;
 }
 
 .footer__inner {
