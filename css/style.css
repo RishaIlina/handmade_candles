@@ -780,8 +780,13 @@ button {
 }
 
 @media (max-width: 404px) {
-    .section--decor::after {
-        width: 130%;
+    .products__item {
+        width: 180px;
+    }
+
+    .products__item-img {
+        width: 170px;
+        height: 206px;
     }
 
     .steps__list {
